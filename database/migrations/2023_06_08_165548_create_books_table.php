@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('author');
+            $table->string('isbn');
             $table->text('description')->nullable();
             $table->unsignedBigInteger('category_id');
             $table->integer('copies')->default(1);
