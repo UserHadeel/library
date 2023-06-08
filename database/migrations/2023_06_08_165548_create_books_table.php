@@ -20,10 +20,6 @@ return new class extends Migration
             $table->integer('copies')->default(1);
             $table->boolean('is_available')->default(true);
             $table->timestamps();
-
-            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-
-
         });
     }
 
