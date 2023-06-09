@@ -19,7 +19,6 @@ class DatabaseSeeder extends Seeder
             'middle_name' => 'MiddleUser',
             'last_name' => 'LastNameUser',
             'email' => 'test@example.com',
-            'password' => bcrypt('password')
         ]);
     }
 }
