@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('auther_id')->nullable()->constrained()->onDelete('cascade');
             $table->string('isbn');
             $table->text('description')->nullable();
-            $table->unsignedBigInteger('category_id');
+            $table->foreignId('category_id');
             $table->integer('copies')->default(1);
             $table->boolean('is_available')->default(true);
             $table->timestamps();
